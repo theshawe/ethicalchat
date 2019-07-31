@@ -1,0 +1,11 @@
+# Site settings
+title: ethical.chat
+email: ethicalchat@gmail.com
+author: theshawe
+description: ethical.chat is theshawe's entry in the 2019 Global Fixathon, more tbc soon...
+url: ethical.chat
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
