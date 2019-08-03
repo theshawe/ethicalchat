@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<!-- Home Page -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col main">
+      <p>
+        Yo, welcome to <a href="https://etical.chat">{{ site.title }}</a>
+        <span><i>Alert:</i>this is a work in progress</span>.
+        <a href="https://etical.chat">{{ site.title }}</a> are an ethical
+        project that is currently being hacked together as part of the
+        <a href="https://fixathon.io">global online fixathon</a>. If you're
+        reading this now. You're one of the lucky first humans to hear about us.
+        Want to support this project <a href="">with your sweet do$h</a>?
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-1-12">
+      <ul>
+        {% for post in site.posts limit 4 %}
+        <li>
+          <span>{{ post.date | date_to_string }}</span> &raquo;
+          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {{
+          post.content | strip_html | truncatewords: 75
+        }}<br />
+        <a href="{{ post.url }}">Read Post</a
+        ><br /><br />
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
