@@ -88,6 +88,35 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(m, a, i, l, e, r) {
+      m["MailerLiteObject"] = e;
+      function f() {
+        var c = { a: arguments, q: [] };
+        var r = this.push(c);
+        return "number" != typeof r ? r : f.bind(c.q);
+      }
+      f.q = f.q || [];
+      m[e] = m[e] || f.bind(f.q);
+      m[e].q = m[e].q || f.q;
+      r = a.createElement(i);
+      var _ = a.getElementsByTagName(i)[0];
+      r.async = 1;
+      r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
+      _.parentNode.insertBefore(r, _);
+    })(
+      window,
+      document,
+      "script",
+      "https://static.mailerlite.com/js/universal.js",
+      "ml"
+    );
+
+    var ml_account = ml("accounts", "1616200", "s4c8h8y7d6", "load");
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 
   <body>
@@ -144,8 +173,24 @@ Invisible Building</p>
       </div>
     </div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-bottom">
+
     <div class="container">
+
+
             <div class="row footerIcons">
+                    <div class="col">
+                            <a
+  href="javascript:;"
+  onclick="ml_account('webforms', '1433380', 'r3v1o1', 'show')"
+>
+  <img
+    src="/images/mailinglist.png"
+    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+    alt=""
+  />
+</a>
+
+                    </div>
               <div class="col">
                 <a href="https://shawe.co"><img src="/images/the-shawe-ib.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></a>
               </div>
